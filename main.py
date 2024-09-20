@@ -29,12 +29,12 @@ app = Client(
 async def inc_user(_, message: Message):
     if message.text:
         if (
-            message.text.strip() == "/top@RankingssBot"
+            message.text.strip() == "/topRankingX_bot"
             or message.text.strip() == "/top"
         ):
             return await show_top_today(_, message)
         if (
-            message.text.strip() == "/start@RankingssBot"
+            message.text.strip() == "/start@RankingX_bot"
             or message.text.strip() == "/start"
         ):
             return await message.reply_text(
